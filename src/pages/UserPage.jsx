@@ -110,7 +110,7 @@ export const UserPage = () => {
         }
 
         fetchData()
-    }, [username, postsCount, isPostCreated, showToast]);
+    }, [username, isPostCreated, postsCount, isPostCreated, showToast]);
 
     if (!user && isLoading) {
         return <Flex m={"20px 0 0 0"} justifyContent={"center"}>
@@ -124,7 +124,7 @@ export const UserPage = () => {
 
     return (
         <Flex flexDirection={"column"}>
-            {user && <CreatePost/>}
+            {user && <CreatePost setIsPostCreated={setIsPostCreated} />}
             <Toaster/>
             <UserHeader user={user}/>
 

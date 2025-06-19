@@ -78,7 +78,7 @@ export const UsersListForCorrespondence = () => {
                                 {recipient.lastMessage && (<Flex alignItems="center">
                                     <IoCheckmarkDone color="blue"/>
                                     <Text fontWeight="bold" ml={2} noOfLines={1}>
-                                        {recipient.lastMessage.text}
+                                        {recipient.lastMessage.text.slice(0, 23)}...
                                     </Text>
                                 </Flex>)}
                             </Box>

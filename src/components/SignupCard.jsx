@@ -21,10 +21,10 @@ export default function SignupCard() {
     const navigate = useNavigate();
 
     const [inputs, setInputs] = useState({
-        name: "ruslan",
-        username: "ruslan",
-        email: "ruslan@gmail.com",
-        password: "1",
+        name: "Марина Сергеевна",
+        username: "MarinaSergeevna",
+        email: "marinaSergects@gmail.com",
+        password: "7ItRVN32rJ",
     });
 
 

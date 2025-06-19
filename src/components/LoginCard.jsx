@@ -18,8 +18,8 @@ export default function LoginCard() {
     const setAuthScreenState = useSetRecoilState(authScreenAtom);
     const [showPassword, setShowPassword] = useState(false);
     const [inputs, setInputs] = useState({
-        username: "Kiril Mihalev",
-        password: "1",
+        username: "MarinaSergeevna",
+        password: "7ItRVN32rJ",
     });
     const [isLoading, setIsLoading] = useState(false);
 
@@ -37,6 +37,7 @@ export default function LoginCard() {
             const data = await res.json();
 
             if (data.error) {
+                showToast("Ошибка", data.error, "error")
                 throw Error(data.error);
             }
             localStorage.setItem("user-threads", JSON.stringify(data));

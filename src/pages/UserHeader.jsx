@@ -81,7 +81,7 @@ const UserHeader = ({user}) => {
                     )}
 
                     {currentUser?._id !== user._id && isFollow && (
-                        <Button onClick={followAndFollowHandle} size={"sm"} loading={isUpdating}>
+                        <Button onClick={followAndFollowHandle} size={"sm"} loading={isUpdating} m={2}>
                             Отписаться
                         </Button>
                     )}
@@ -95,7 +95,7 @@ const UserHeader = ({user}) => {
                     )}
 
                     {currentUser?._id !== user._id && (
-                        <Button onClick={startTexting} size={"sm"} isLoading={isUpdating}>
+                        <Button onClick={startTexting} size={"sm"} isLoading={isUpdating} mt={2}>
                             Написать
                         </Button>
                     )}
